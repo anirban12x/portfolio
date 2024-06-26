@@ -124,3 +124,11 @@ function animateNumbers() {
 
 // Call the animation function when the window loads
 window.addEventListener('load', animateNumbers);
+
+
+
+window.addEventListener('load', function() {
+  document.getElementById('loader').style.display = 'none';
+  document.getElementById('content').style.display = 'block';
+  document.body.style.overflow = 'auto'; // Allow scrolling once loading is complete
+});
